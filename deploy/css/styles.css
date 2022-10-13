@@ -3,7 +3,7 @@
 ============= */
 /* ---------------- Font Sizing ---------------- */
 html {
-  font-size: 100%;
+  font-size: 156.25%;
 }
 
 /* ---------------- Media Queries ---------------- */
@@ -12,9 +12,9 @@ html {
 ============= */
 :root {
   --white: #fff;
-  --white0: 225,255,255;
+  --white0: 255,255,255;
   --black: #000;
-  --black0:0,0,0;
+  --black0: 0,0,0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -364,6 +364,14 @@ template {
 ============= */
 h1 {
   margin: 4;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /* =============
@@ -400,8 +408,14 @@ textarea {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 90vh;
 }
 #hero #overlay {
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hero #overlay section h1 {
+  font-family: "Josefin Sans", sans-serif;
 }
