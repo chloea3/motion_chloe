@@ -1,37 +1,42 @@
-import {
-    gsap
-} from "gsap";
-import {
-    ScrollTrigger
-} from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import { TweenLite } from "gsap/gsap-core";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from("#history-first", {
+
+gsap.timeline("#history-first", {
     duration: 2,
     alpha: 0,
     y: 100,
     scrollTrigger: {
-        trigger: "#history-first"
+        trigger: "#history-first", markers: true
     }
 });
-gsap.from("#history-middle", {
+gsap.timeline("#history-middle",  {
     duration: 2,
     alpha: 0,
     y: 100,
     scrollTrigger: {
-        trigger: "#history-middle"
+        trigger: "#history-middle", markers: true
     }
 });
-gsap.from("#history-last", {
+gsap.timeline("#history-last", {
     duration: 1,
     alpha: 0,
     y: 100,
     scrollTrigger: {
-        trigger: "#history-last"
+        trigger: "#history-last", markers: true
+         
     }
 });
-
-gsap.from:("#skills")
+gsap.timeline("skills-content", {
+    duration: 5,
+    alpha: 0,
+    y: 60,
+    scrollTrigger: {
+        trigger: "#skills-content", markers: true
+    }
+});
 
 
