@@ -1,35 +1,23 @@
 import { gsap } from "gsap";
-import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import { GSDevTools } from "gsap/GSDevTools";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
-
-
-
-function simpleMotion(){
-    var tl = gsap.timeline()
-
-    return tl;
-}
-
-function patternMotion(){
-    var tl = gsap.timeline()
-
-    return tl;
-}
-
-function UIMotion(){
-    var tl = gsap.timeline()
-
-    return tl;
-}
-
-
-var mainTL = gsap.timeline();
-mainTL.add(simpleMotion())
-    .add(patternMotion())
-    .add(UIMotion());
+gsap.registerPlugin(ScrollTrigger);
 
 
 
-GSDevTools.create();
+import $ from "jquery";
+
+let $nav = $('nav[data-nav]');
+let isVisible = false;
+
+$(".nav-btns").on("click", function(){
+    console.log("click");
+    if(isVisible === false){
+        $nav.show();
+        isVisible = true;
+    }
+    else{
+        $nav.hide();
+        isVisible = false;
+    }
+})
