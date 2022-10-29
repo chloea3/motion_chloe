@@ -1,0 +1,39 @@
+#hero{
+ background-image: url(../img/hero.jpg);
+ background-size: cover;
+ background-position: center;
+ height: 60vh;
+
+    #overlay{
+        background-color: rgba(var(--black0),0.55);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        section{
+            
+
+
+            h1{
+                color: var(--white) ;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: rem-calc(90);
+
+
+            }
+            
+            button{
+                border: none;
+                background-color: var(--pink);
+                color: var(--black);
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: rem-calc(30);
+                font-weight: 900;
+                padding: 30px 40px;
+                
+                
+            }
+        }
+    }
+}
