@@ -1,0 +1,1 @@
+!function(){"use strict";gsap.timeline({defaults:{duration:.5,ease:"none",opacity:0}}).from(".svg",{y:40})}();
