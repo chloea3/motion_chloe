@@ -8,31 +8,31 @@ tl.from('.circle', {
   });
 
   tl.from('.blue1', {
-    duration:  1.5 ,
+    duration:  1 ,
     scale: 0,
     transformOrigin: 'top center', 
     ease: 'elastic',
   });
   tl.from('.blue2', {
-    duration:  1.5 ,
+    duration:  1 ,
     scale: 0,
     transformOrigin: 'top center', 
     ease: 'elastic',
   });
   tl.from('.blue3', {
-    duration: 1.5 ,
+    duration: 1 ,
     scale: 0,
     transformOrigin: 'top center', 
     ease: 'elastic',
   });
   tl.from('.blue4', {
-    duration:  1.5 ,
+    duration:  1 ,
     scale: 0,
     transformOrigin: 'top center', 
     ease: 'elastic',
   });
   tl.from('.black', {
-    duration:  1.5 ,
+    duration:  15 ,
     scale: 0,
     transformOrigin: 'top center', 
     ease: 'elastic',
